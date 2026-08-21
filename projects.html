@@ -18,19 +18,21 @@
 <body>
 
     <header class="site-header">
-        <div class="container nav">
+
+        <div class="container header-inner">
 
             <a href="index.html" class="logo">
                 Adison Smith
             </a>
 
-            <nav>
+            <nav class="main-nav">
                 <a href="index.html">Home</a>
-                <a href="projects.html">Projects</a>
+                <a href="projects.html" class="active">Projects</a>
                 <a href="about.html">About</a>
             </nav>
 
         </div>
+
     </header>
 
 
@@ -57,33 +59,19 @@
 
                 </div>
 
-                <div class="map-demo">
-                
-                    <p class="project-type">
-                        FOLIUM · LEAFLET · PYTHON
-                    </p>
-                
-                    <h2>Interactive Map Demo</h2>
-                
-                    <p>
-                        Pan and zoom to explore the interactive map.
-                    </p>
-                
-                    <iframe
-                        src="test_map.html"
-                        title="Interactive Folium Map"
-                        loading="lazy">
-                    </iframe>
-                
-                </div>
+
                 <div class="project-grid">
 
 
                     <article class="project-card">
 
-                        <div class="project-image placeholder">
-                            Project image
-                        </div>
+                        <a href="#" class="project-image-link">
+
+                            <div class="project-image placeholder">
+                                Project image
+                            </div>
+
+                        </a>
 
                         <div class="project-content">
 
@@ -112,9 +100,13 @@
 
                     <article class="project-card">
 
-                        <div class="project-image placeholder">
-                            Project image
-                        </div>
+                        <a href="#" class="project-image-link">
+
+                            <div class="project-image placeholder">
+                                Project image
+                            </div>
+
+                        </a>
 
                         <div class="project-content">
 
@@ -143,9 +135,16 @@
 
                     <article class="project-card">
 
-                        <div class="project-image placeholder">
-                            Project image
-                        </div>
+                        <a
+                            href="projects/minneapolis-parks.html"
+                            class="project-image-link"
+                        >
+
+                            <div class="project-image placeholder">
+                                Project image
+                            </div>
+
+                        </a>
 
                         <div class="project-content">
 
@@ -160,10 +159,13 @@
                             <p>
                                 Analyzed access to parks and trails across
                                 Minneapolis neighborhoods and presented
-                                results using interactive mapping.
+                                the results using interactive mapping.
                             </p>
 
-                            <a href="#" class="project-link">
+                            <a
+                                href="projects/minneapolis-parks.html"
+                                class="project-link"
+                            >
                                 View project →
                             </a>
 
@@ -174,9 +176,13 @@
 
                     <article class="project-card">
 
-                        <div class="project-image placeholder">
-                            Project image
-                        </div>
+                        <a href="#" class="project-image-link">
+
+                            <div class="project-image placeholder">
+                                Project image
+                            </div>
+
+                        </a>
 
                         <div class="project-content">
 
@@ -210,6 +216,26 @@
         </section>
 
     </main>
+
+
+    <footer class="site-footer">
+
+        <div class="container footer-inner">
+
+            <p>
+                © 2026 Adison Smith
+            </p>
+
+            <a
+                href="https://github.com/adisonsmith"
+                target="_blank"
+            >
+                GitHub
+            </a>
+
+        </div>
+
+    </footer>
 
 </body>
 
