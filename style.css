@@ -623,3 +623,296 @@ a {
     }
 
 }
+/* ==================================
+   PROJECT DETAIL PAGE
+================================== */
+
+.project-detail {
+    padding: 75px 0 110px;
+}
+
+
+/* Project heading */
+
+.project-header {
+    max-width: 850px;
+
+    margin-bottom: 55px;
+}
+
+.back-link {
+    display: inline-block;
+
+    margin-bottom: 45px;
+
+    color: #638174;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+.back-link:hover {
+    color: #294c40;
+}
+
+.project-header h1 {
+    margin: 0;
+
+    font-size: clamp(3.5rem, 7vw, 5.5rem);
+
+    line-height: 0.98;
+
+    letter-spacing: -0.05em;
+
+    color: #17221e;
+}
+
+.project-intro {
+    max-width: 700px;
+
+    margin: 28px 0 0;
+
+    font-size: 1.3rem;
+
+    color: #5b665f;
+}
+
+
+/* Project metadata */
+
+.project-meta {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 40px;
+
+    padding: 30px 0;
+
+    border-top: 1px solid #dce5e1;
+    border-bottom: 1px solid #dce5e1;
+}
+
+.project-meta p {
+    margin: 5px 0 0;
+
+    color: #35413c;
+}
+
+.meta-label {
+    font-size: 0.72rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.1em;
+
+    text-transform: uppercase;
+
+    color: #718079;
+}
+
+
+/* General project sections */
+
+.project-section {
+    padding: 80px 0;
+
+    border-bottom: 1px solid #e3e9e6;
+}
+
+.project-section h2 {
+    margin: 0 0 25px;
+
+    font-size: 2.2rem;
+
+    letter-spacing: -0.03em;
+
+    color: #17221e;
+}
+
+.project-text {
+    max-width: 750px;
+
+    font-size: 1.1rem;
+
+    color: #53615c;
+}
+
+.project-text p:first-child {
+    margin-top: 0;
+}
+
+
+/* Map heading */
+
+.section-heading {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: end;
+
+    margin-bottom: 35px;
+}
+
+.section-heading h2 {
+    margin-bottom: 0;
+}
+
+.section-heading > p {
+    margin: 0;
+
+    color: #5b665f;
+}
+
+
+/* Interactive map */
+
+.map-container {
+    width: 100%;
+
+    overflow: hidden;
+
+    border: 1px solid #dce5e1;
+
+    border-radius: 10px;
+
+    background: #e8efec;
+}
+
+.map-container iframe {
+    display: block;
+
+    width: 100%;
+    height: 650px;
+
+    border: none;
+}
+
+
+/* Methods */
+
+.methods-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 45px;
+}
+
+.method {
+    padding-top: 20px;
+
+    border-top: 2px solid #dce5e1;
+}
+
+.method-number {
+    display: block;
+
+    margin-bottom: 20px;
+
+    font-size: 0.8rem;
+
+    font-weight: 700;
+
+    color: #638174;
+}
+
+.method h3 {
+    margin: 0 0 10px;
+
+    font-size: 1.2rem;
+
+    color: #17221e;
+}
+
+.method p {
+    margin: 0;
+
+    color: #5b665f;
+}
+
+
+/* Skill tags */
+
+.skill-list {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.skill-list span {
+    padding: 8px 14px;
+
+    border: 1px solid #cdd8d3;
+
+    border-radius: 100px;
+
+    background: #f7f9f8;
+
+    font-size: 0.9rem;
+
+    color: #405049;
+}
+
+
+/* Bottom navigation */
+
+.project-bottom-nav {
+    padding-top: 60px;
+}
+
+.project-bottom-nav a {
+    color: #294c40;
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.project-bottom-nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .project-detail {
+        padding: 50px 0 80px;
+    }
+
+    .project-meta {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .project-section {
+        padding: 55px 0;
+    }
+
+    .section-heading {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .methods-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .map-container iframe {
+        height: 450px;
+    }
+
+}
