@@ -384,3 +384,53 @@ footer {
     }
 
 }
+/* ------------------------------
+   HOME PAGE
+------------------------------ */
+
+.home {
+    min-height: calc(100vh - 73px);
+
+    display: flex;
+    align-items: center;
+
+    background: #f7f9fa;
+}
+
+.home-content {
+    max-width: 900px;
+}
+
+.home h1 {
+    margin: 0;
+
+    font-size: clamp(4rem, 10vw, 7rem);
+    line-height: 0.95;
+    letter-spacing: -0.05em;
+
+    color: #17221e;
+}
+
+.home-title {
+    margin: 22px 0 45px;
+
+    font-size: 1.5rem;
+    color: #53615c;
+}
+
+.home-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.home-nav a {
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    color: #294c40;
+    text-decoration: none;
+}
+
+.home-nav a:hover {
+    text-decoration: underline;
+}
