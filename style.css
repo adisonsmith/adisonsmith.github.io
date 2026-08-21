@@ -1,5 +1,5 @@
 /* ----------------------------------
-   BASIC RESET
+   RESET
 ---------------------------------- */
 
 * {
@@ -48,19 +48,17 @@ a {
 ---------------------------------- */
 
 .site-header {
-    height: 74px;
-
-    display: flex;
-    align-items: center;
-
     border-bottom: 1px solid #e3e9e6;
 
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.96);
 }
 
-.nav {
+.header-inner {
+    min-height: 74px;
+
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
@@ -76,7 +74,55 @@ a {
 
 
 /* ----------------------------------
-   LANDING PAGE
+   NAVIGATION
+---------------------------------- */
+
+.main-nav {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+}
+
+.main-nav a {
+    position: relative;
+
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    color: #53615c;
+
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.main-nav a:hover {
+    color: #17221e;
+}
+
+.main-nav a.active {
+    color: #17221e;
+    font-weight: 600;
+}
+
+.main-nav a.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: -8px;
+
+    height: 2px;
+
+    background: #294c40;
+}
+
+
+/* ----------------------------------
+   HOMEPAGE
 ---------------------------------- */
 
 .landing {
@@ -96,9 +142,6 @@ a {
             #eef3f1 100%
         );
 }
-
-
-/* Large subtle background circle */
 
 .landing::after {
     content: "";
@@ -126,9 +169,6 @@ a {
         );
 }
 
-
-/* Smaller map-like outline */
-
 .landing::before {
     content: "";
 
@@ -144,9 +184,7 @@ a {
         translateY(-50%)
         rotate(18deg);
 
-    border:
-        1px solid
-        rgba(41, 76, 64, 0.15);
+    border: 1px solid rgba(41, 76, 64, 0.15);
 
     border-radius:
         43% 57%
@@ -155,14 +193,8 @@ a {
     opacity: 0.75;
 }
 
-
-/* ----------------------------------
-   LANDING CONTENT
----------------------------------- */
-
 .landing-content {
     position: relative;
-
     z-index: 2;
 
     max-width: 850px;
@@ -170,9 +202,6 @@ a {
     padding-top: 20px;
     padding-bottom: 40px;
 }
-
-
-/* Small text above title */
 
 .eyebrow {
     margin: 0 0 22px;
@@ -185,9 +214,6 @@ a {
 
     color: #56756a;
 }
-
-
-/* Main title */
 
 .landing h1 {
     margin: 0;
@@ -208,9 +234,6 @@ a {
     color: #17221e;
 }
 
-
-/* Subtitle */
-
 .landing-description {
     margin-top: 30px;
     margin-bottom: 0;
@@ -221,11 +244,6 @@ a {
     color: #53615c;
 }
 
-
-/* ----------------------------------
-   NAVIGATION BUTTONS
----------------------------------- */
-
 .landing-buttons {
     display: flex;
     flex-wrap: wrap;
@@ -234,6 +252,11 @@ a {
 
     margin-top: 36px;
 }
+
+
+/* ----------------------------------
+   BUTTONS
+---------------------------------- */
 
 .button {
     display: inline-block;
@@ -253,9 +276,6 @@ a {
         transform 0.2s;
 }
 
-
-/* Projects button */
-
 .primary-button {
     background: #294c40;
     color: #ffffff;
@@ -266,12 +286,8 @@ a {
 .primary-button:hover {
     background: #1d3930;
 
-    transform:
-        translateY(-2px);
+    transform: translateY(-2px);
 }
-
-
-/* About and GitHub buttons */
 
 .secondary-button {
     background: rgba(255, 255, 255, 0.75);
@@ -286,8 +302,248 @@ a {
 
     border-color: #879b92;
 
-    transform:
-        translateY(-2px);
+    transform: translateY(-2px);
+}
+
+
+/* ----------------------------------
+   PROJECTS PAGE
+---------------------------------- */
+
+.projects-page {
+    padding: 90px 0 120px;
+}
+
+.page-heading {
+    max-width: 700px;
+
+    margin-bottom: 55px;
+}
+
+.page-heading h1 {
+    margin: 0 0 18px;
+
+    font-size:
+        clamp(
+            3.5rem,
+            7vw,
+            5rem
+        );
+
+    line-height: 1;
+
+    letter-spacing: -0.045em;
+
+    color: #17221e;
+}
+
+.page-description {
+    margin: 0;
+
+    font-size: 1.2rem;
+
+    color: #5b665f;
+}
+
+
+/* ----------------------------------
+   PROJECT GRID
+---------------------------------- */
+
+.project-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 32px;
+}
+
+
+/* ----------------------------------
+   PROJECT CARD
+---------------------------------- */
+
+.project-card {
+    overflow: hidden;
+
+    border: 1px solid #e2e8e5;
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 30px
+        rgba(0, 0, 0, 0.08);
+}
+
+
+/* ----------------------------------
+   PROJECT IMAGE
+---------------------------------- */
+
+.project-image-link {
+    display: block;
+
+    overflow: hidden;
+
+    text-decoration: none;
+}
+
+.project-image {
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.025);
+}
+
+.project-thumbnail {
+    display: block;
+
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    object-fit: cover;
+
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-thumbnail {
+    transform: scale(1.025);
+}
+
+.placeholder {
+    background: #e8efec;
+
+    color: #72827b;
+
+    font-weight: 600;
+}
+
+
+/* ----------------------------------
+   PROJECT CONTENT
+---------------------------------- */
+
+.project-content {
+    padding: 28px;
+}
+
+.project-type {
+    margin: 0 0 10px;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    letter-spacing: 0.07em;
+
+    color: #638174;
+}
+
+.project-card h2 {
+    margin: 0 0 12px;
+
+    font-size: 1.45rem;
+    line-height: 1.25;
+
+    color: #1f2933;
+}
+
+.project-card p {
+    color: #5b665f;
+}
+
+.project-link {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    color: #294c40;
+
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+
+/* ----------------------------------
+   INTERACTIVE MAP
+---------------------------------- */
+
+.map-container {
+    width: 100%;
+
+    margin: 40px 0;
+
+    overflow: hidden;
+
+    border: 1px solid #dce5e1;
+    border-radius: 10px;
+
+    background: #e8efec;
+}
+
+.map-container iframe {
+    display: block;
+
+    width: 100%;
+    height: 650px;
+
+    border: none;
+}
+
+
+/* ----------------------------------
+   FOOTER
+---------------------------------- */
+
+.site-footer {
+    border-top: 1px solid #e3e9e6;
+
+    padding: 30px 0;
+}
+
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 0.9rem;
+
+    color: #6b7280;
+}
+
+.footer-inner p {
+    margin: 0;
+}
+
+.footer-inner a {
+    text-decoration: none;
+}
+
+.footer-inner a:hover {
+    color: #17221e;
 }
 
 
@@ -297,21 +553,29 @@ a {
 
 @media (max-width: 700px) {
 
-    .site-header {
-        height: 68px;
+    .header-inner {
+        min-height: auto;
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 14px;
+
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .main-nav {
+        gap: 20px;
     }
 
     .landing {
-        min-height:
-            calc(100vh - 68px);
+        min-height: auto;
 
         align-items: flex-start;
 
         padding-top: 85px;
-    }
-
-    .landing-content {
-        padding-bottom: 80px;
+        padding-bottom: 85px;
     }
 
     .landing h1 {
@@ -327,14 +591,6 @@ a {
         font-size: 1.1rem;
     }
 
-    .landing-buttons {
-        gap: 10px;
-    }
-
-    .button {
-        padding: 12px 19px;
-    }
-
     .landing::after {
         width: 380px;
         height: 380px;
@@ -347,38 +603,23 @@ a {
         display: none;
     }
 
-}
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
 
-/* ----------------------------------
-   INTERACTIVE MAP
----------------------------------- */
+    .projects-page {
+        padding: 65px 0 90px;
+    }
 
-.map-demo {
-    margin-bottom: 70px;
-}
+    .map-container iframe {
+        height: 450px;
+    }
 
-.map-demo h2 {
-    margin: 5px 0 8px;
+    .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
 
-    font-size: 1.8rem;
+        gap: 8px;
+    }
 
-    color: #17221e;
-}
-
-.map-demo > p {
-    color: #5b665f;
-}
-
-.map-demo iframe {
-    display: block;
-
-    width: 100%;
-    height: 600px;
-
-    margin-top: 25px;
-
-    border: 1px solid #dce5e1;
-    border-radius: 10px;
-
-    background: #e8efec;
 }
