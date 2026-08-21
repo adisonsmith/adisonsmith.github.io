@@ -392,23 +392,177 @@ footer {
     min-height: calc(100vh - 73px);
     display: flex;
     align-items: center;
-    background: #f7f9fa;
+    position: relative;
+    overflow: hidden;
+    background:
+        linear-gradient(
+            135deg,
+            #f7f9fa 0%,
+            #eef3f1 100%
+        );
+}
+
+.landing::after {
+    content: "";
+    position: absolute;
+
+    width: 620px;
+    height: 620px;
+
+    right: -130px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(41, 76, 64, 0.10),
+            rgba(41, 76, 64, 0.03) 55%,
+            transparent 70%
+        );
+
+    border: 1px solid rgba(41, 76, 64, 0.08);
+}
+
+.landing::before {
+    content: "";
+
+    position: absolute;
+    width: 420px;
+    height: 420px;
+
+    right: 70px;
+    top: 50%;
+    transform: translateY(-50%) rotate(20deg);
+
+    border: 1px solid rgba(41, 76, 64, 0.14);
+    border-radius: 45% 55% 60% 40%;
+
+    opacity: 0.7;
 }
 
 .landing-content {
+    position: relative;
+    z-index: 2;
+
     max-width: 900px;
+
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.landing .eyebrow {
+    margin-bottom: 24px;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+
+    letter-spacing: 0.16em;
+
+    color: #56756a;
 }
 
 .landing h1 {
     margin: 0;
-    font-size: clamp(4rem, 8vw, 6.5rem);
-    line-height: 0.95;
-    letter-spacing: -0.05em;
+
+    max-width: 780px;
+
+    font-size: clamp(4.5rem, 9vw, 7.5rem);
+    line-height: 0.92;
+    letter-spacing: -0.055em;
+
     color: #17221e;
 }
 
 .landing-description {
-    margin-top: 28px;
-    font-size: 1.4rem;
+    margin-top: 32px;
+    margin-bottom: 0;
+
+    font-size: 1.45rem;
+    font-weight: 500;
+
     color: #53615c;
+}
+
+
+/* ------------------------------
+   HEADER IMPROVEMENTS
+------------------------------ */
+
+.site-header {
+    position: relative;
+    z-index: 10;
+
+    border-bottom: 1px solid #e3e9e6;
+
+    background: rgba(255, 255, 255, 0.92);
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: 750;
+    letter-spacing: -0.02em;
+
+    color: #17221e;
+}
+
+.main-nav a {
+    position: relative;
+
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    color: #46534e;
+}
+
+.main-nav a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -6px;
+
+    width: 0;
+    height: 2px;
+
+    background: #294c40;
+
+    transition: width 0.2s ease;
+}
+
+.main-nav a:hover::after {
+    width: 100%;
+}
+
+
+/* ------------------------------
+   MOBILE LANDING PAGE
+------------------------------ */
+
+@media (max-width: 700px) {
+
+    .landing {
+        align-items: flex-start;
+        padding-top: 90px;
+    }
+
+    .landing h1 {
+        font-size: clamp(3.8rem, 18vw, 5.5rem);
+    }
+
+    .landing::after {
+        width: 380px;
+        height: 380px;
+
+        right: -210px;
+        top: 65%;
+    }
+
+    .landing::before {
+        display: none;
+    }
+
 }
