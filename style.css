@@ -348,3 +348,37 @@ a {
     }
 
 }
+
+/* ----------------------------------
+   INTERACTIVE MAP
+---------------------------------- */
+
+.map-demo {
+    margin-bottom: 70px;
+}
+
+.map-demo h2 {
+    margin: 5px 0 8px;
+
+    font-size: 1.8rem;
+
+    color: #17221e;
+}
+
+.map-demo > p {
+    color: #5b665f;
+}
+
+.map-demo iframe {
+    display: block;
+
+    width: 100%;
+    height: 600px;
+
+    margin-top: 25px;
+
+    border: 1px solid #dce5e1;
+    border-radius: 10px;
+
+    background: #e8efec;
+}
