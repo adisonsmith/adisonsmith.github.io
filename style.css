@@ -135,62 +135,23 @@ a {
 
     overflow: hidden;
 
-    background:
+    background-image:
         linear-gradient(
-            135deg,
-            #f7f9fa 0%,
-            #eef3f1 100%
-        );
+            rgba(247, 249, 248, 0.48),
+            rgba(247, 249, 248, 0.48)
+        ),
+        url("photos/wind_farm.JPG");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.landing::after {
-    content: "";
+/* Remove original decorative background shapes */
 
-    position: absolute;
-
-    width: 650px;
-    height: 650px;
-
-    right: -140px;
-    top: 50%;
-
-    transform: translateY(-50%);
-
-    border-radius: 50%;
-
-    border: 1px solid rgba(41, 76, 64, 0.10);
-
-    background:
-        radial-gradient(
-            circle at center,
-            rgba(41, 76, 64, 0.11),
-            rgba(41, 76, 64, 0.035) 55%,
-            transparent 72%
-        );
-}
-
+.landing::after,
 .landing::before {
-    content: "";
-
-    position: absolute;
-
-    width: 420px;
-    height: 420px;
-
-    right: 80px;
-    top: 50%;
-
-    transform:
-        translateY(-50%)
-        rotate(18deg);
-
-    border: 1px solid rgba(41, 76, 64, 0.15);
-
-    border-radius:
-        43% 57%
-        58% 42%;
-
-    opacity: 0.75;
+    display: none;
 }
 
 .landing-content {
@@ -576,6 +537,8 @@ a {
 
         padding-top: 85px;
         padding-bottom: 85px;
+
+        background-position: center;
     }
 
     .landing h1 {
@@ -589,18 +552,6 @@ a {
 
     .landing-description {
         font-size: 1.1rem;
-    }
-
-    .landing::after {
-        width: 380px;
-        height: 380px;
-
-        right: -230px;
-        top: 70%;
-    }
-
-    .landing::before {
-        display: none;
     }
 
     .project-grid {
@@ -621,8 +572,9 @@ a {
 
         gap: 8px;
     }
-
 }
+
+
 /* ==================================
    PROJECT DETAIL PAGE
 ================================== */
@@ -914,146 +866,4 @@ a {
     .map-container iframe {
         height: 450px;
     }
-
-}
-/* ==================================
-   HOMEPAGE PHOTO HERO
-================================== */
-
-.home-hero {
-    position: relative;
-
-    width: 100%;
-    min-height: 650px;
-
-    display: flex;
-    align-items: center;
-
-    background-image: url("photos/wind_farm.JPG");
-    background-size: cover;
-    background-position: center;
-
-    overflow: hidden;
-}
-
-
-/* Light fade over photograph */
-
-.home-hero-overlay {
-    position: absolute;
-    inset: 0;
-
-    background: rgba(245, 248, 246, 0.48);
-}
-
-
-/* Keeps content aligned with rest of site */
-
-.home-hero-content {
-    position: relative;
-    z-index: 1;
-
-    width: 100%;
-}
-
-
-/* Small GIS heading */
-
-.home-hero .eyebrow {
-    margin: 0 0 20px;
-
-    font-size: 0.78rem;
-    font-weight: 700;
-
-    letter-spacing: 0.18em;
-
-    color: #52766a;
-}
-
-
-/* Main heading */
-
-.home-hero h1 {
-    max-width: 650px;
-
-    margin: 0 0 24px;
-
-    font-size: clamp(3rem, 5vw, 4.8rem);
-    font-weight: 700;
-
-    line-height: 1.02;
-
-    letter-spacing: -0.045em;
-
-    color: #17231f;
-}
-
-
-/* Name */
-
-.home-name {
-    margin: 0 0 30px;
-
-    font-size: 1.1rem;
-    font-weight: 400;
-
-    color: #26342f;
-}
-
-
-/* Navigation buttons */
-
-.home-nav {
-    display: flex;
-    gap: 12px;
-}
-
-
-.home-nav a {
-    display: inline-block;
-
-    padding: 11px 20px;
-
-    border: 1px solid #315b4d;
-    border-radius: 4px;
-
-    background: rgba(255, 255, 255, 0.70);
-
-    color: #315b4d;
-
-    font-size: 0.9rem;
-    font-weight: 600;
-
-    text-decoration: none;
-
-    transition: background 0.2s ease,
-                color 0.2s ease;
-}
-
-
-.home-nav a:hover {
-    background: #315b4d;
-    color: white;
-}
-
-
-/* ==================================
-   MOBILE
-================================== */
-
-@media (max-width: 700px) {
-
-    .home-hero {
-        min-height: 600px;
-        background-position: center;
-    }
-
-    .home-hero h1 {
-        font-size: 3rem;
-    }
-
-    .home-nav {
-        flex-wrap: wrap;
-    }
-
 }
