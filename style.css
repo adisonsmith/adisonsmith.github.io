@@ -916,7 +916,9 @@ a {
     }
 
 }
-/* FULL-WIDTH HOMEPAGE BANNER */
+/* ==================================
+   HOMEPAGE PHOTO HERO
+================================== */
 
 .home-hero {
     position: relative;
@@ -935,17 +937,17 @@ a {
 }
 
 
-/* Fade over entire image */
+/* Light fade over photograph */
 
 .home-hero-overlay {
     position: absolute;
     inset: 0;
 
-    background: rgba(245, 248, 246, 0.65);
+    background: rgba(245, 248, 246, 0.48);
 }
 
 
-/* Text stays aligned with rest of website */
+/* Keeps content aligned with rest of site */
 
 .home-hero-content {
     position: relative;
@@ -955,29 +957,51 @@ a {
 }
 
 
-.home-hero h1 {
-    max-width: 800px;
+/* Small GIS heading */
 
-    margin: 15px 0 20px;
+.home-hero .eyebrow {
+    margin: 0 0 20px;
 
-    font-size: clamp(4rem, 8vw, 7rem);
+    font-size: 0.78rem;
+    font-weight: 700;
 
-    line-height: 0.95;
+    letter-spacing: 0.18em;
 
-    letter-spacing: -0.055em;
-
-    color: #17221e;
+    color: #52766a;
 }
 
+
+/* Main heading */
+
+.home-hero h1 {
+    max-width: 650px;
+
+    margin: 0 0 24px;
+
+    font-size: clamp(3rem, 5vw, 4.8rem);
+    font-weight: 700;
+
+    line-height: 1.02;
+
+    letter-spacing: -0.045em;
+
+    color: #17231f;
+}
+
+
+/* Name */
 
 .home-name {
-    margin: 0 0 35px;
+    margin: 0 0 30px;
 
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+    font-weight: 400;
 
-    color: #35413c;
+    color: #26342f;
 }
 
+
+/* Navigation buttons */
 
 .home-nav {
     display: flex;
@@ -986,23 +1010,50 @@ a {
 
 
 .home-nav a {
-    padding: 12px 22px;
+    display: inline-block;
 
-    border: 1px solid #294c40;
-    border-radius: 5px;
+    padding: 11px 20px;
 
-    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid #315b4d;
+    border-radius: 4px;
 
-    color: #294c40;
+    background: rgba(255, 255, 255, 0.70);
 
+    color: #315b4d;
+
+    font-size: 0.9rem;
     font-weight: 600;
+
     text-decoration: none;
 
-    transition: 0.2s ease;
+    transition: background 0.2s ease,
+                color 0.2s ease;
 }
 
 
 .home-nav a:hover {
-    background: #294c40;
+    background: #315b4d;
     color: white;
+}
+
+
+/* ==================================
+   MOBILE
+================================== */
+
+@media (max-width: 700px) {
+
+    .home-hero {
+        min-height: 600px;
+        background-position: center;
+    }
+
+    .home-hero h1 {
+        font-size: 3rem;
+    }
+
+    .home-nav {
+        flex-wrap: wrap;
+    }
+
 }
