@@ -916,3 +916,93 @@ a {
     }
 
 }
+/* FULL-WIDTH HOMEPAGE BANNER */
+
+.home-hero {
+    position: relative;
+
+    width: 100%;
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    background-image: url("wind_farm.jpg");
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
+}
+
+
+/* Fade over entire image */
+
+.home-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(245, 248, 246, 0.65);
+}
+
+
+/* Text stays aligned with rest of website */
+
+.home-hero-content {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+}
+
+
+.home-hero h1 {
+    max-width: 800px;
+
+    margin: 15px 0 20px;
+
+    font-size: clamp(4rem, 8vw, 7rem);
+
+    line-height: 0.95;
+
+    letter-spacing: -0.055em;
+
+    color: #17221e;
+}
+
+
+.home-name {
+    margin: 0 0 35px;
+
+    font-size: 1.25rem;
+
+    color: #35413c;
+}
+
+
+.home-nav {
+    display: flex;
+    gap: 12px;
+}
+
+
+.home-nav a {
+    padding: 12px 22px;
+
+    border: 1px solid #294c40;
+    border-radius: 5px;
+
+    background: rgba(255, 255, 255, 0.55);
+
+    color: #294c40;
+
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+
+.home-nav a:hover {
+    background: #294c40;
+    color: white;
+}
