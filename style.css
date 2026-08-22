@@ -867,3 +867,88 @@ a {
         height: 450px;
     }
 }
+/* FINAL HOMEPAGE OVERRIDE */
+
+.landing {
+    min-height: calc(100vh - 74px) !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    position: relative !important;
+    overflow: hidden !important;
+
+    background:
+        linear-gradient(
+            rgba(247, 249, 248, 0.48),
+            rgba(247, 249, 248, 0.48)
+        ),
+        url("photos/wind_farm.JPG") center / cover no-repeat !important;
+}
+
+.landing::before,
+.landing::after {
+    display: none !important;
+}
+
+.landing-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 850px;
+}
+
+.landing-buttons {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 36px;
+}
+
+.landing-buttons .button {
+    display: inline-block;
+
+    padding: 13px 24px;
+
+    border-radius: 6px;
+
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+.landing-buttons .primary-button {
+    background: #294c40;
+    color: white;
+
+    border: 1px solid #294c40;
+}
+
+.landing-buttons .secondary-button {
+    background: rgba(255, 255, 255, 0.75);
+    color: #294c40;
+
+    border: 1px solid #c4d0cb;
+}
+
+@media (max-width: 700px) {
+
+    .landing {
+        min-height: calc(100vh - 74px) !important;
+        align-items: center !important;
+
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+
+        background:
+            linear-gradient(
+                rgba(247, 249, 248, 0.48),
+                rgba(247, 249, 248, 0.48)
+            ),
+            url("photos/wind_farm.JPG") center / cover no-repeat !important;
+    }
+
+}
