@@ -1604,7 +1604,33 @@ a {
 
     color: #53615c;
 }
+.resume-banner {
+    width: 100%;
+    height: 340px;
 
+    background-image:
+        linear-gradient(
+            rgba(20, 35, 28, 0.35),
+            rgba(20, 35, 28, 0.35)
+        ),
+        url("photos/YOUR-IMAGE.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 max(40px, calc((100vw - 1200px) / 2));
+
+    margin-bottom: 40px;
+}
+
+.resume-banner h1 {
+    color: white;
+    font-size: 5rem;
+    margin: 0;
+}
 
 /* ==================================
    EDUCATION
