@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Hydraulic and hydrologic model risk assessment project by Adison Smith"
+    >
+
+    <title>Hydraulic/Hydrologic Model Risk Assessment | Adison Smith</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="container header-inner">
+
+            <a href="../index.html" class="logo">
+                Adison Smith
+            </a>
+
+            <nav class="main-nav">
+                <a href="../index.html">Home</a>
+                <a href="../projects.html" class="active">Projects</a>
+                <a href="../about.html">About Me</a>
+                <a href="../resume.html">Resume</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="project-detail">
+
+            <div class="container">
+
+
+                <!-- PROJECT HEADER -->
+
+                <div class="project-header">
+
+                    <a href="../projects.html" class="back-link">
+                        ← All Projects
+                    </a>
+
+                    <h1>
+                        Hydraulic/Hydrologic Model Risk Assessment
+                    </h1>
+
+                </div>
+
+
+                <!-- BACKGROUND -->
+
+                <section class="project-section">
+
+                    <h2>
+                        Background
+                    </h2>
+
+                    <div class="project-text">
+
+                        <p>
+                            This was a project I completed while interning with
+                            the City of Minneapolis Public Works. I wrote two
+                            ArcPy scripts that automate the process of compiling
+                            hydraulic/hydrologic model outputs, then conduct
+                            geoprocessing and analysis to return flood risk
+                            scores for assets in the stormwater network.
+                        </p>
+
+                        <p>
+                            The final risk scores are used to help inform the
+                            city's decisions about where to prioritize
+                            inspection and repair work.
+                        </p>
+
+                        <p>
+                            I developed the scripts as Jupyter Notebooks designed
+                            to run inside ArcGIS Pro. My focus was on simplicity
+                            and readability so the scripts can be easily
+                            maintained.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+                <!-- METHODS -->
+
+                <section class="project-section">
+
+                    <h2>
+                        Methods
+                    </h2>
+
+
+                    <!-- SCRIPT 1 -->
+
+                    <div class="webmap-highlight">
+
+                        <div class="webmap-highlight-text">
+
+
+                            <h3>
+                                Building Flood Risk
+                            </h3>
+
+                            <p>
+                                The first script evaluates the flood risk of
+                                buildings within pipesheds. The workflow:
+                            </p>
+
+                            <ul>
+                                <li>
+                                    Reads datasource file paths from a CSV and
+                                    stores them in a dictionary.
+                                </li>
+
+                                <li>
+                                    Iterates through the dictionary to import
+                                    selected feature classes from each datasource
+                                    into a geodatabase.
+                                </li>
+
+                                <li>
+                                    Appends the imported data into a single
+                                    dataset for analysis.
+                                </li>
+
+                                <li>
+                                    Performs geoprocessing and spatial analysis
+                                    to rank flooding by pipeshed.
+                                </li>
+
+                                <li>
+                                    Assigns risk scores to individual assets
+                                    based on the pipeshed results.
+                                </li>
+                            </ul>
+
+                        </div>
+
+
+                        <figure class="webmap-highlight-image">
+
+                        <figure class="webmap-highlight-image">
+                        
+                            <img
+                                src="../photos/COF.png"
+                                alt="ArcPy script for building flood risk analysis"
+                            >
+                            <figcaption>
+                                Sample of code from the Arcpy script.
+                            </figcaption>
+                        </figure>
+
+                        </figure>
+
+                    </div>
+
+
+                    <!-- SCRIPT 2 -->
+
+                    <div class="webmap-highlight">
+
+                        <div class="webmap-highlight-text">
+
+
+
+                            <h3>
+                                Pipe Capacity Risk
+                            </h3>
+
+                            <p>
+                                The second script evaluates pipe capacity
+                                deficiencies across different flood events.
+                                The workflow:
+                            </p>
+
+                            <ul>
+                                <li>
+                                    Reads datasource file paths from a CSV and
+                                    stores them in a dictionary.
+                                </li>
+
+                                <li>
+                                    Iterates through the dictionary to import
+                                    selected feature classes from each datasource
+                                    into a geodatabase.
+                                </li>
+
+                                <li>
+                                    Appends the imported data into a single
+                                    dataset for analysis.
+                                </li>
+
+                                <li>
+                                    Processes multiple model output fields
+                                    through a scoring algorithm.
+                                </li>
+
+                                <li>
+                                    Returns a final risk score for each
+                                    stormwater asset.
+                                </li>
+                            </ul>
+
+                        </div>
+
+
+                        <figure class="webmap-highlight-image">
+
+                           <figure class="webmap-highlight-image">
+
+                            <img
+                                src="../photos/LOF.png"
+                                alt="ArcPy script for building flood risk analysis"
+                            >
+                            <figcaption>
+                                Sample of code from the Arcpy script.
+                            </figcaption>
+                        </figure>
+
+                        </figure>
+
+                    </div>
+
+                </section>
+
+
+                <!-- SKILLS -->
+
+                <section class="project-section">
+
+                    <h2>
+                        Skills & Tools
+                    </h2>
+
+                    <div class="skill-list">
+
+                        <span>ArcGIS Pro</span>
+                        <span>Python</span>
+                        <span>ArcPy</span>
+                        <span>Arcade</span>
+                        <span>Jupyter</span>
+                        <span>Geoprocessing</span>
+                        <span>Spatial Analysis</span>
+                        <span>Automation</span>
+
+                    </div>
+
+                </section>
+
+
+                <div class="project-bottom-nav">
+
+                    <a href="../projects.html">
+                        ← Back to Projects
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="container footer-inner">
+
+            <p>
+                © 2026 Adison Smith
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
