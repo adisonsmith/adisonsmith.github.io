@@ -333,9 +333,6 @@ a {
         rgba(0, 0, 0, 0.08);
 }
 
-
-/* Project thumbnail */
-
 .project-image-link {
     display: block;
 
@@ -384,16 +381,10 @@ a {
     font-weight: 600;
 }
 
-
-/* Wind Study thumbnail only */
-
 .wind-thumbnail {
     object-fit: contain;
     background: #ffffff;
 }
-
-
-/* Project card text */
 
 .project-content {
     padding: 28px;
@@ -708,9 +699,6 @@ a {
    WIND STUDY
 ================================== */
 
-
-/* Wind Study page spacing */
-
 .wind-study-page .project-header {
     margin-bottom: 20px;
 }
@@ -731,9 +719,6 @@ a {
     margin-bottom: 25px;
 }
 
-
-/* Prevent overflow */
-
 .wind-study-page .project-detail,
 .wind-study-page .project-detail .container,
 .wind-study-page .project-section,
@@ -743,9 +728,6 @@ a {
 
     box-sizing: border-box;
 }
-
-
-/* Introduction */
 
 .wind-intro {
     width: 100%;
@@ -766,9 +748,6 @@ a {
 .wind-intro p:last-child {
     margin-bottom: 0;
 }
-
-
-/* Study area */
 
 .featured-project-image {
     width: 100%;
@@ -798,9 +777,6 @@ a {
 
     color: #6b746f;
 }
-
-
-/* Study design */
 
 .study-design-grid {
     display: grid;
@@ -849,9 +825,6 @@ a {
 
     color: #5b665f;
 }
-
-
-/* Data collection */
 
 .field-method-grid {
     display: grid;
@@ -907,9 +880,6 @@ a {
 
     color: #66716c;
 }
-
-
-/* Results */
 
 .results-content {
     width: 100%;
@@ -1023,11 +993,16 @@ a {
 
     color: #65706a;
 }
+
 .tsunami-thumbnail {
     object-fit: contain;
+
     background: #f7f9f8;
+
     padding: 18px;
 }
+
+
 /* ==================================
    WEB MAPPING PROJECT
 ================================== */
@@ -1089,6 +1064,7 @@ a {
 
 .inline-project-link {
     color: #294c40;
+
     font-weight: 650;
 }
 
@@ -1119,25 +1095,18 @@ a {
     color: #65706a;
 }
 
-
-@media (max-width: 800px) {
-
-    .webmap-highlight {
-        grid-template-columns: 1fr;
-
-        gap: 28px;
-
-        padding: 45px 0;
-    }
-
-}
 .map-thumbnail {
     aspect-ratio: 16 / 9;
+
     object-fit: contain;
     object-position: center;
+
     background: #ffffff;
+
     padding: 12px;
 }
+
+
 /* ==================================
    ABOUT PAGE
 ================================== */
@@ -1145,9 +1114,6 @@ a {
 .about-page {
     padding: 85px 0 110px;
 }
-
-
-/* About banner */
 
 .about-page-header {
     width: 100vw;
@@ -1197,9 +1163,6 @@ a {
     color: #17221e;
 }
 
-
-/* About sections */
-
 .about-story-section {
     display: grid;
 
@@ -1228,9 +1191,6 @@ a {
     min-width: 0;
 }
 
-
-/* About text */
-
 .about-text {
     max-width: 760px;
 
@@ -1247,9 +1207,6 @@ a {
 .about-text p:last-child {
     margin-bottom: 0;
 }
-
-
-/* Standard About photo grid */
 
 .about-photo-grid {
     display: grid;
@@ -1291,16 +1248,11 @@ a {
     color: #65706a;
 }
 
-
-/* Outside of GIS layout */
-
 .outside-photo-grid {
     grid-template-columns: 1fr 1.15fr 1fr;
 
     align-items: center;
 }
-
-/* Outer images horizontal */
 
 .outside-photo-grid .about-photo:nth-child(1) img,
 .outside-photo-grid .about-photo:nth-child(3) img {
@@ -1308,8 +1260,6 @@ a {
 
     object-fit: cover;
 }
-
-/* Middle image vertical */
 
 .outside-photo-grid .about-photo:nth-child(2) img {
     aspect-ratio: 3 / 4;
@@ -1320,6 +1270,7 @@ a {
 .about-ending {
     margin-top: 38px;
 }
+
 .course-intro {
     margin-top: 32px;
     margin-bottom: 18px;
@@ -1327,23 +1278,29 @@ a {
 
 .course-grid {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
+
     gap: 14px;
 }
 
 .course-card {
     padding: 20px;
+
     border: 1px solid #dfe6e2;
     border-radius: 8px;
+
     background: #fafbf9;
 }
 
 .course-card span {
     display: block;
+
     margin-bottom: 18px;
 
     font-size: 0.72rem;
     font-weight: 700;
+
     letter-spacing: 0.12em;
 
     color: #6c887d;
@@ -1359,11 +1316,6 @@ a {
     color: #17221e;
 }
 
-@media (max-width: 750px) {
-    .course-grid {
-        grid-template-columns: 1fr;
-    }
-}
 
 /* ==================================
    FOOTER
@@ -1399,238 +1351,100 @@ a {
 
 
 /* ==================================
-   TABLET
-================================== */
-
-@media (max-width: 900px) {
-
-    .about-story-section {
-        grid-template-columns: 1fr;
-
-        gap: 30px;
-    }
-
-    .field-method-grid {
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
-    }
-
-}
-
-
-/* ==================================
-   MOBILE
-================================== */
-
-@media (max-width: 700px) {
-
-    /* Header */
-
-    .header-inner {
-        min-height: auto;
-
-        flex-direction: column;
-        align-items: flex-start;
-
-        gap: 14px;
-
-        padding-top: 18px;
-        padding-bottom: 18px;
-    }
-
-    .main-nav {
-        gap: 20px;
-    }
-
-
-    /* Homepage */
-
-    .landing {
-        min-height: auto;
-
-        align-items: flex-start;
-
-        padding-top: 85px;
-        padding-bottom: 85px;
-
-        background-position: center;
-    }
-
-    .landing h1 {
-        font-size: clamp(3.5rem, 17vw, 5rem);
-    }
-
-    .landing-description {
-        font-size: 1.1rem;
-    }
-
-
-    /* Projects page */
-
-    .projects-page {
-        padding: 65px 0 90px;
-    }
-
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
-
-
-    /* Project detail */
-
-    .project-detail {
-        padding: 50px 0 80px;
-    }
-
-    .project-meta {
-        grid-template-columns: 1fr;
-
-        gap: 20px;
-    }
-
-    .project-section {
-        padding: 55px 0;
-    }
-
-    .section-heading {
-        grid-template-columns: 1fr;
-
-        gap: 15px;
-    }
-
-    .methods-grid {
-        grid-template-columns: 1fr;
-
-        gap: 35px;
-    }
-
-    .map-container iframe {
-        height: 450px;
-    }
-
-
-    /* Wind Study */
-
-    .wind-study-page .project-section {
-        padding: 38px 0;
-    }
-
-    .study-design-grid,
-    .field-method-grid {
-        grid-template-columns: 1fr;
-
-        gap: 30px;
-    }
-
-
-    /* Tsunami */
-
-    .tsunami-results-grid {
-        grid-template-columns: 1fr;
-
-        gap: 35px;
-    }
-
-
-    /* About */
-
-    .about-page {
-        padding: 55px 0 80px;
-    }
-
-    .about-page-header {
-        margin-bottom: 45px;
-    }
-
-    .about-story-section {
-        padding: 50px 0;
-    }
-
-    .about-photo-grid,
-    .outside-photo-grid {
-        grid-template-columns: 1fr;
-
-        gap: 30px;
-    }
-
-    .outside-photo-grid .about-photo:nth-child(2) img {
-        aspect-ratio: 3 / 4;
-    }
-
-
-    /* Footer */
-
-    .footer-inner {
-        flex-direction: column;
-        align-items: flex-start;
-
-        gap: 8px;
-    }
-
-}
-/* ==================================
    RESUME PAGE
 ================================== */
 
 .resume-page {
-    padding: 90px 0 120px;
+    padding: 0 0 120px;
 }
 
 
-/* Header */
+/* ==================================
+   RESUME BANNER
+================================== */
 
-.resume-header {
-    max-width: 760px;
-    margin-bottom: 80px;
-}
-
-.resume-header h1 {
-    margin: 0 0 22px;
-
-    font-size: clamp(3.8rem, 7vw, 5.5rem);
-    line-height: 1;
-
-    letter-spacing: -0.05em;
-
-    color: #17221e;
-}
-
-.resume-header > p:last-child {
-    margin: 0;
-
-    max-width: 650px;
-
-    font-size: 1.2rem;
-
-    color: #53615c;
-}
 .resume-banner {
-    width: 100%;
-    height: 340px;
+    position: relative;
+
+    width: 100vw;
+    height: 300px;
+
+    margin-left: calc(50% - 50vw);
+    margin-bottom: 45px;
+
+    overflow: hidden;
 
     background-image:
         linear-gradient(
-            rgba(20, 35, 28, 0.35),
-            rgba(20, 35, 28, 0.35)
+            rgba(15, 30, 24, 0.32),
+            rgba(15, 30, 24, 0.32)
         ),
-        url("photos/YOUR-IMAGE.jpg");
+        url("photos/finland.jpeg");
 
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+
+    border-top: 1px solid #e3e9e6;
+    border-bottom: 1px solid #e3e9e6;
+}
+
+.resume-banner-content {
+    width: 100%;
+    height: 100%;
 
     display: flex;
     align-items: center;
 
-    padding: 0 max(40px, calc((100vw - 1200px) / 2));
+    padding-left:
+        max(5vw, calc((100vw - 1100px) / 2));
 
-    margin-bottom: 40px;
+    padding-right:
+        max(5vw, calc((100vw - 1100px) / 2));
 }
 
 .resume-banner h1 {
-    color: white;
-    font-size: 5rem;
     margin: 0;
+
+    font-size: clamp(3.8rem, 7vw, 5.5rem);
+
+    line-height: 1;
+
+    letter-spacing: -0.05em;
+
+    color: #ffffff;
 }
+
+.resume-intro {
+    width: min(1100px, 90%);
+    max-width: 700px;
+
+    margin: 0 auto 40px;
+
+    font-size: 1.15rem;
+    line-height: 1.7;
+
+    color: #53615c;
+}
+
+.resume-intro:empty {
+    display: none;
+}
+
+
+/* ==================================
+   RESUME CONTENT WIDTH
+================================== */
+
+.resume-education,
+.resume-experience,
+.resume-skills {
+    width: min(1100px, 90%);
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* ==================================
    EDUCATION
@@ -1656,6 +1470,7 @@ a {
     font-weight: 700;
 
     letter-spacing: 0.14em;
+    text-transform: uppercase;
 
     color: #638174;
 }
@@ -1666,13 +1481,20 @@ a {
     font-size: 2rem;
     line-height: 1.15;
 
+    letter-spacing: -0.03em;
+
     color: #17221e;
+}
+
+.resume-education-details {
+    min-width: 0;
 }
 
 .resume-education-details h3 {
     margin: 0 0 8px;
 
     font-size: 1.3rem;
+    line-height: 1.3;
 
     color: #17221e;
 }
@@ -1684,9 +1506,9 @@ a {
 }
 
 .resume-coursework {
-    margin-top: 18px !important;
-
     max-width: 650px;
+
+    margin-top: 18px !important;
 
     font-size: 0.95rem;
     line-height: 1.6;
@@ -1698,19 +1520,17 @@ a {
 ================================== */
 
 .resume-experience {
-    padding: 90px 0;
+    padding: 85px 0;
 }
 
 .timeline {
     position: relative;
 
+    width: 100%;
     max-width: 1000px;
 
     margin: 0 auto;
 }
-
-
-/* Main tree trunk */
 
 .timeline::before {
     content: "";
@@ -1719,7 +1539,6 @@ a {
 
     top: 0;
     bottom: 0;
-
     left: 50%;
 
     width: 2px;
@@ -1728,9 +1547,6 @@ a {
 
     background: #b9c8c2;
 }
-
-
-/* Each job */
 
 .timeline-item {
     position: relative;
@@ -1744,26 +1560,17 @@ a {
     padding-bottom: 0;
 }
 
-
-/* Left side */
-
 .timeline-left {
     padding-right: 55px;
 
     text-align: right;
 }
 
-
-/* Right side */
-
 .timeline-right {
     margin-left: 50%;
 
     padding-left: 55px;
 }
-
-
-/* Tree nodes */
 
 .timeline-marker {
     position: absolute;
@@ -1789,8 +1596,19 @@ a {
     left: -8px;
 }
 
+.timeline-content {
+    position: relative;
 
-/* Small branch connecting node to job */
+    padding: 28px;
+
+    border: 1px solid #e0e7e3;
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 8px 24px rgba(25, 45, 37, 0.04);
+}
 
 .timeline-content::before {
     content: "";
@@ -1807,34 +1625,13 @@ a {
 
 .timeline-left .timeline-content::before {
     right: 8px;
-}
 
-.timeline-right .timeline-content::before {
-    left: 8px;
-}
-
-
-/* Job content */
-
-.timeline-content {
-    position: relative;
-
-    padding: 28px;
-
-    border: 1px solid #e0e7e3;
-    border-radius: 10px;
-
-    background: #ffffff;
-
-    box-shadow:
-        0 8px 24px rgba(25, 45, 37, 0.04);
-}
-
-.timeline-left .timeline-content::before {
     transform: translateX(100%);
 }
 
 .timeline-right .timeline-content::before {
+    left: 8px;
+
     transform: translateX(-100%);
 }
 
@@ -1847,6 +1644,7 @@ a {
     font-weight: 700;
 
     letter-spacing: 0.12em;
+    text-transform: uppercase;
 
     color: #638174;
 }
@@ -1895,11 +1693,11 @@ a {
 
 
 /* ==================================
-   SKILLS
+   RESUME SKILLS
 ================================== */
 
 .resume-skills {
-    padding-top: 65px;
+    padding-top: 60px;
 
     border-top: 1px solid #e3e9e6;
 }
@@ -1909,28 +1707,67 @@ a {
 
     font-size: 2rem;
 
+    letter-spacing: -0.03em;
+
     color: #17221e;
 }
 
 
 /* ==================================
-   RESUME MOBILE
+   TABLET
+================================== */
+
+@media (max-width: 900px) {
+
+    .about-story-section {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .field-method-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* ==================================
+   RESUME TABLET / MOBILE
 ================================== */
 
 @media (max-width: 800px) {
 
     .resume-page {
-        padding: 60px 0 90px;
+        padding-bottom: 90px;
+    }
+
+    .resume-banner {
+        height: 230px;
+
+        margin-bottom: 35px;
+    }
+
+    .resume-banner-content {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .resume-banner h1 {
+        font-size: clamp(3.2rem, 14vw, 4.5rem);
     }
 
     .resume-education {
         grid-template-columns: 1fr;
 
         gap: 25px;
+
+        padding: 40px 0;
     }
 
-
-    /* Move tree to left side */
+    .resume-experience {
+        padding: 65px 0;
+    }
 
     .timeline::before {
         left: 8px;
@@ -1966,61 +1803,154 @@ a {
 
         transform: none;
     }
-
-}
-/* Resume banner */
-
-.resume-banner {
-    position: relative;
-
-    width: 100%;
-    height: 260px;
-
-    margin-bottom: 35px;
-
-    border-radius: 10px;
-    overflow: hidden;
-
-    background-image:
-        linear-gradient(
-            rgba(15, 30, 24, 0.35),
-            rgba(15, 30, 24, 0.35)
-        ),
-        url("photos/finland.jpeg");
-
-    background-size: cover;
-    background-position: center;
 }
 
-.resume-banner-content {
-    position: absolute;
 
-    inset: 0;
+/* ==================================
+   MOBILE
+================================== */
 
-    display: flex;
-    align-items: center;
+@media (max-width: 700px) {
 
-    padding: 45px 55px;
+    .header-inner {
+        min-height: auto;
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 14px;
+
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .main-nav {
+        gap: 20px;
+    }
+
+    .landing {
+        min-height: auto;
+
+        align-items: flex-start;
+
+        padding-top: 85px;
+        padding-bottom: 85px;
+
+        background-position: center;
+    }
+
+    .landing h1 {
+        font-size: clamp(3.5rem, 17vw, 5rem);
+    }
+
+    .landing-description {
+        font-size: 1.1rem;
+    }
+
+    .projects-page {
+        padding: 65px 0 90px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-detail {
+        padding: 50px 0 80px;
+    }
+
+    .project-meta {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .project-section {
+        padding: 55px 0;
+    }
+
+    .section-heading {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .methods-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .map-container iframe {
+        height: 450px;
+    }
+
+    .wind-study-page .project-section {
+        padding: 38px 0;
+    }
+
+    .study-design-grid,
+    .field-method-grid {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .tsunami-results-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .about-page {
+        padding: 55px 0 80px;
+    }
+
+    .about-page-header {
+        margin-bottom: 45px;
+    }
+
+    .about-story-section {
+        padding: 50px 0;
+    }
+
+    .about-photo-grid,
+    .outside-photo-grid {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .outside-photo-grid .about-photo:nth-child(2) img {
+        aspect-ratio: 3 / 4;
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 8px;
+    }
 }
 
-.resume-banner h1 {
-    margin: 0;
 
-    font-size: clamp(3.8rem, 7vw, 5.5rem);
-    line-height: 1;
+@media (max-width: 500px) {
 
-    letter-spacing: -0.05em;
+    .resume-banner {
+        height: 200px;
+    }
 
-    color: white;
-}
+    .timeline-content {
+        padding: 22px;
+    }
 
-.resume-intro {
-    max-width: 700px;
-
-    margin: 0 0 70px;
-
-    font-size: 1.15rem;
-    line-height: 1.7;
-
-    color: #53615c;
+    .resume-education,
+    .resume-experience,
+    .resume-skills {
+        width: 90%;
+    }
 }
