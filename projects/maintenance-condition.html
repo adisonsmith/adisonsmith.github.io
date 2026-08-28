@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Automated stormwater and sewer asset condition updates using Arcpy"
+    >
+
+    <title>Maintenance-Based Asset Condition Updates | Adison Smith</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="container header-inner">
+
+            <a href="../index.html" class="logo">
+                Adison Smith
+            </a>
+
+            <nav class="main-nav">
+                <a href="../index.html">Home</a>
+                <a href="../projects.html" class="active">Projects</a>
+                <a href="../about.html">About Me</a>
+                <a href="../resume.html">Resume</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="project-detail">
+
+            <div class="container">
+
+
+                <!-- PROJECT HEADER -->
+
+                <div class="project-header">
+
+                    <a
+                        href="../projects.html"
+                        class="back-link"
+                    >
+                        ← All Projects
+                    </a>
+
+                    <h1>
+                        Asset Condition Updates
+                    </h1>
+
+                </div>
+
+
+                <!-- BACKGROUND -->
+
+                <section class="project-section">
+
+                    <h2>
+                        Background
+                    </h2>
+
+                    <div class="project-text">
+
+                        <p>
+                            The City of Minneapolis regularly evaluates storm and
+                            sewer infrastructure and assigns structural condition
+                            scores based on NASSCO's standardized PACP codes.
+                            For this project, I developed a script that automates the process for
+                            updating condition scores based on maintenance activity.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+                <!-- METHODS -->
+
+                <section class="project-section">
+
+                    <h2>
+                        Methods
+                    </h2>
+
+                    <div class="project-text">
+
+                    </div>
+
+
+                    <!-- STEP 01 -->
+
+                    <div class="webmap-highlight">
+
+                        <div class="webmap-highlight-text">
+
+
+                            <h3>
+                                Process Maintenance Records
+                            </h3>
+
+                            <p>
+                                The script reads maintenance and inspection records
+                                and cleans field types.
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- STEP 02 -->
+
+                    <div class="webmap-highlight">
+
+                        <div class="webmap-highlight-text">
+
+                            <h3>
+                                Build Maintenance History
+                            </h3>
+
+                            <p>
+                                An ArcPy SearchCursor is used to create a nested
+                                dictionary containing information on the dates of
+                                maintenance activities for each stormwater and
+                                sewer asset.
+                            </p>
+
+                        </div>
+
+                        <figure class="webmap-highlight-image method-image">
+
+                            <img
+                                src="../photos/SearchCursor.png"
+                                alt="Python workflow for building asset maintenance history"
+                            >
+
+                        </figure>
+
+                    </div>
+
+
+                    <!-- STEP 03 -->
+
+                    <div class="webmap-highlight">
+
+                        <div class="webmap-highlight-text">
+
+                            <h3>
+                                Connect Maintenance to Asset Conditions
+                            </h3>
+
+                            <p>
+                                Association dictionaries define which maintenance
+                                activities resolve specific infrastructure issues.
+                                Existing condition records are then compared against
+                                the maintenance history and the dates of the
+                                corresponding activities.
+                            </p>
+
+                        </div>
+
+                        
+
+                    </div>
+
+
+                </section>
+
+
+                <!-- TOOLS -->
+
+                <section class="project-section">
+
+                    <h2>
+                        Tools Used
+                    </h2>
+
+                    <div class="skill-list">
+
+                        <span>ArcGIS Pro</span>
+                        <span>Python</span>
+                        <span>ArcPy</span>
+                        <span>SearchCursor</span>
+                        <span>Maximo</span>
+                        <span>GraniteNet</span>
+
+                    </div>
+
+                </section>
+
+
+                <!-- BOTTOM NAVIGATION -->
+
+                <div class="project-bottom-nav">
+
+                    <a href="../projects.html">
+                        ← Back to Projects
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="container footer-inner">
+
+            <p>
+                © 2026 Adison Smith
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
