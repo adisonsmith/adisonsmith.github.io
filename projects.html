@@ -7,29 +7,32 @@
 
     <meta
         name="description"
-        content="Adison Smith GIS projects"
+        content="Interactive Superior Hiking Trail basemap built with Mapbox by Adison Smith"
     >
 
-    <title>Projects | Adison Smith</title>
+    <title>Interactive Superior Hiking Trail Basemap | Adison Smith</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
+
 <body>
+
+    <!-- HEADER -->
 
     <header class="site-header">
 
         <div class="container header-inner">
 
-            <a href="index.html" class="logo">
+            <a href="../index.html" class="logo">
                 Adison Smith
             </a>
 
             <nav class="main-nav">
-                <a href="index.html">Home</a>
-                <a href="projects.html" class="active">Projects</a>
-                <a href="about.html">About Me</a>
-                <a href="resume.html">Resume</a>
+                <a href="../index.html">Home</a>
+                <a href="../projects.html" class="active">Projects</a>
+                <a href="../about.html">About Me</a>
+                <a href="../resume.html">Resume</a>
             </nav>
 
         </div>
@@ -39,286 +42,217 @@
 
     <main>
 
-        <section class="projects-page">
+        <!-- PROJECT INTRO -->
+
+        <section class="project-detail">
 
             <div class="container">
 
-                <div class="page-heading">
+                <div class="project-header">
+
+                    <a
+                        href="../projects.html"
+                        class="back-link"
+                    >
+                        ← All Projects
+                    </a>
 
                     <p class="eyebrow">
-                        SELECTED WORK
+                        MAPBOX
                     </p>
 
                     <h1>
-                        Projects
+                        Interactive Superior Hiking Trail Basemap
                     </h1>
 
-                    <p class="page-description">
-                        GIS, spatial analysis, automation,
-                        and data analysis projects.
+                    <p class="project-intro">
+                        A custom Mapbox basemap of Minnesota's
+                        Superior Hiking Trail, designed for
+                        exploring the trail, its campsites,
+                        and other trail features.
                     </p>
 
                 </div>
 
 
-                <div class="project-grid">
+                <!-- PROJECT INFORMATION -->
+
+                <div class="project-meta">
+
+                    <div>
+                        <span class="meta-label">
+                            Tools
+                        </span>
+                        <p>
+                            Mapbox
+                        </p>
+                    </div>
+
+                    <div>
+                        <span class="meta-label">
+                            Project Type
+                        </span>
+                        <p>
+                            Cartography & Web Mapping
+                        </p>
+                    </div>
+
+                    <div>
+                        <span class="meta-label">
+                            Study Area
+                        </span>
+                        <p>
+                            Superior Hiking Trail, Minnesota
+                        </p>
+                    </div>
+
+                </div>
 
 
-                    <!-- HYDRAULIC / HYDROLOGIC MODEL -->
+                <!-- OVERVIEW -->
 
-                    <article class="project-card">
+                <section class="project-section">
 
-                        <a
-                            href="projects/hydraulic-risk.html"
-                            class="project-image-link"
-                        >
+                    <h2>
+                        Overview
+                    </h2>
 
-                            <img
-                                src="photos/LOF.png"
-                                alt="Hydraulic and hydrologic model risk assessment"
-                                class="project-thumbnail"
-                            >
+                    <div class="project-text">
 
-                        </a>
+                        <!-- TODO: add your own details: why you made it, data sources, design choices -->
 
-                        <div class="project-content">
+                        <p>
+                            The Superior Hiking Trail runs along the ridgeline
+                            above Lake Superior's North Shore. This project is a
+                            custom basemap built in Mapbox that brings the trail,
+                            its campsites, and other trail features together in
+                            one interactive map.
+                        </p>
 
-                            <p class="project-type">
-                                PYTHON · ARCGIS PRO · ARCPY · ARCADE
-                            </p>
+                    </div>
 
+                </section>
+
+
+                <!-- INTERACTIVE MAP -->
+
+                <section class="project-section">
+
+                    <div class="section-heading">
+
+                        <div>
                             <h2>
-                                Hydraulic/Hydrologic Model Risk Assessment
+                                Explore the map
                             </h2>
-
-                            <p>
-                                Automated the processing and analysis of
-                                hydraulic/hydrologic model outputs to generate
-                                flood risk scores for stormwater infrastructure.
-                            </p>
-
-                            <a
-                                href="projects/hydraulic-risk.html"
-                                class="project-link"
-                            >
-                                View project →
-                            </a>
-
                         </div>
 
-                    </article>
-
-                                        <article class="project-card">
-                    
-                        <a
-                            href="projects/trout-unlimited.html"
-                            class="project-image-link"
-                        >
-                            <img
-                                src="photos/midway.png"
-                                alt="Web mapping project for Minnesota Trout Unlimited"
-                                class="project-thumbnail map-thumbnail"
-                            >
-                        </a>
-                    
-                        <div class="project-content">
-                    
-                            <p class="project-type">
-                                ARCGIS PRO · ARCGIS ONLINE · WORDPRESS
-                            </p>
-                    
-                            <h2>
-                                Web Mapping for Minnesota Trout Unlimited
-                            </h2>
-                    
-                            <p>
-                                Created web maps to support communication
-                                on MNTU's website.
-                            </p>
-                    
+                        <p>
+                            Scroll to zoom and drag to pan along the trail.
                             <a
-                                href="projects/trout-unlimited.html"
-                                class="project-link"
+                                href="https://api.mapbox.com/styles/v1/adisonsmith/cmupy21u0000o01s138yr13nk.html?title=view&amp;access_token=pk.eyJ1IjoiYWRpc29uc21pdGgiLCJhIjoiY211cHh3Z2h4MDQyYTJ6b2U5YTIzZ3BiaiJ9.nyARyi4dusMyCP1uGqVAtQ&amp;zoomwheel=true&amp;fresh=true#10.31/46.7315/-92.1485/0/73"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
-                                View project →
+                                Open full screen →
                             </a>
-                    
-                        </div>
-                    
-                    </article>
+                        </p>
 
-                    <!-- WORK ORDER CLASSIFICATION -->
+                    </div>
 
-                    <article class="project-card">
-                    
-                        <a
-                            href="projects/maintenance-condition.html"
-                            class="project-image-link"
-                        >
-                    
-                            <img
-                                src="photos/SearchCursor.png"
-                                alt="Code for Arcpy SearchCursor"
-                                class="project-thumbnail"
-                            >
-                    
-                        </a>
-                    
-                        <div class="project-content">
-                    
-                            <p class="project-type">
-                                PYTHON · ARCPY · SCIKIT-LEARN · PANDAS
-                            </p>
-                    
-                            <h2>
-                                Asset Condition Updates
-                            </h2>
-                    
+
+                    <div class="map-container">
+
+                        <iframe
+                            src="https://api.mapbox.com/styles/v1/adisonsmith/cmupy21u0000o01s138yr13nk.html?title=view&amp;access_token=pk.eyJ1IjoiYWRpc29uc21pdGgiLCJhIjoiY211cHh3Z2h4MDQyYTJ6b2U5YTIzZ3BiaiJ9.nyARyi4dusMyCP1uGqVAtQ&amp;zoomwheel=true&amp;fresh=true#10.31/46.7315/-92.1485/0/73"
+                            title="Interactive Superior Hiking Trail basemap"
+                            loading="lazy">
+                        </iframe>
+
+                    </div>
+
+                </section>
+
+
+                <!-- METHODS -->
+
+                <section class="project-section">
+
+                    <h2>
+                        Methods
+                    </h2>
+
+                    <!-- TODO: adjust these to match your actual workflow -->
+
+                    <div class="methods-grid">
+
+                        <div class="method">
+                            <span class="method-number">
+                                01
+                            </span>
+                            <h3>
+                                Data
+                            </h3>
                             <p>
-                                Developed an automated workflow that analyzes maintenance
-                                records and uses completed work to update storm and sewer
-                                asset condition information.
+                                Gathered trail, campsite, and trail
+                                feature data and uploaded it to Mapbox.
                             </p>
-                    
-                            <a
-                                href="projects/maintenance-condition.html"
-                                class="project-link"
-                            >
-                                View project →
-                            </a>
-                    
-                        </div>
-                    
-                    </article>
-
- <!-- MINNEAPOLIS PARKS & TRAILS -->
-
-                    <article class="project-card">
-
-                        <a
-                            href="projects/minneapolis-parks.html"
-                            class="project-image-link"
-                        >
-                            <img
-                                src="photos/neighborhood_map.png"
-                                alt="Minneapolis Neighborhood Parks and Trails map"
-                                class="project-thumbnail"
-                            >
-                        </a>
-
-                        <div class="project-content">
-
-                            <p class="project-type">
-                                GEOPANDAS · FOLIUM · PYTHON
-                            </p>
-
-                            <h2>
-                                Minneapolis Neighborhoods:
-                                Parks & Trails Analysis
-                            </h2>
-
-                            <p>
-                                Created an interactive dashboard to analyze
-                                and compare the amount of parks and trails in
-                                neighborhoods across Minneapolis.
-                            </p>
-
-                            <a
-                                href="projects/minneapolis-parks.html"
-                                class="project-link"
-                            >
-                                View project →
-                            </a>
-
                         </div>
 
-                    </article>
-
-
-                    <!-- TSUNAMI PROJECT -->
-
-                    <article class="project-card">
-
-                        <a
-                            href="projects/tsunami.html"
-                            class="project-image-link"
-                        >
-                            <img
-                                src="photos/poster.jpeg"
-                                alt="Tsunami data infographic"
-                                class="project-thumbnail tsunami-thumbnail"
-                            >
-                        </a>
-
-                        <div class="project-content">
-
-                            <p class="project-type">
-                                R · TIDYVERSE · ADOBE ILLUSTRATOR
-                            </p>
-
-                            <h2>
-                                Global Tsunami Data Analysis
-                            </h2>
-
+                        <div class="method">
+                            <span class="method-number">
+                                02
+                            </span>
+                            <h3>
+                                Cartographic Design
+                            </h3>
                             <p>
-                                Explored NOAA tsunami data using statistical analysis,
-                                visualization, and narrative communication in R.
+                                Styled the basemap and trail layers
+                                in Mapbox Studio.
                             </p>
-
-                            <a
-                                href="projects/tsunami.html"
-                                class="project-link"
-                            >
-                                View project →
-                            </a>
-
                         </div>
 
-                    </article>
-
-
-                   
-                    <!-- WIND STUDY -->
-
-                    <article class="project-card">
-
-                        <a
-                            href="projects/wind-study.html"
-                            class="project-image-link"
-                        >
-                            <img
-                                src="photos/Day1.jpg"
-                                alt="Local Wind Pattern Study"
-                                class="project-thumbnail wind-thumbnail"
-                            >
-                        </a>
-
-                        <div class="project-content">
-
-                            <p class="project-type">
-                                FIELD MAPS · ARCGIS PRO · MATPLOTLIB · GNSS
-                            </p>
-
-                            <h2>
-                                Local Wind Pattern Study
-                            </h2>
-
+                        <div class="method">
+                            <span class="method-number">
+                                03
+                            </span>
+                            <h3>
+                                Publishing
+                            </h3>
                             <p>
-                                A field study testing whether the Midtown Greenway
-                                channels local wind into an east-west direction.
+                                Published the style as an interactive
+                                web map and embedded it here.
                             </p>
-
-                            <a
-                                href="projects/wind-study.html"
-                                class="project-link"
-                            >
-                                View project →
-                            </a>
-
                         </div>
 
-                    </article>
+                    </div>
 
+                </section>
+
+
+                <!-- SKILLS -->
+
+                <section class="project-section">
+
+                    <h2>
+                        Skills
+                    </h2>
+
+                    <div class="skill-list">
+                        <span>Mapbox</span>
+                        <span>Cartography</span>
+                        <span>Web Mapping</span>
+                    </div>
+
+                </section>
+
+
+                <!-- BOTTOM NAVIGATION -->
+
+                <div class="project-bottom-nav">
+
+                    <a href="../projects.html">
+                        ← Back to Projects
+                    </a>
 
                 </div>
 
@@ -328,6 +262,8 @@
 
     </main>
 
+
+    <!-- FOOTER -->
 
     <footer class="site-footer">
 
